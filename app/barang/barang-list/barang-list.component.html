@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-success" (click)="onNewBarang()">Tambah Data</button>
+    <hr>
+  </div>
+  <hr>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+        <app-barang-item
+        *ngFor="let barangEL of barangs; let i = index"
+        [barang] ="barangEL"
+        [index]="i"></app-barang-item>
+  </div>
+</div>

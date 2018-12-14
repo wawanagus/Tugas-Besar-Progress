@@ -1,0 +1,20 @@
+<a style="cursor:pointer;" 
+  [routerLink]="[index]"
+  routerLinkActive="active"
+  class="list-group-item clearfix">
+  <app-shopping-edit></app-shopping-edit><br><br><br>
+      <div class="pull-left">
+        <b><h4 class="list-group-item-heading">Kode : {{barang.kode_barang}}</h4></b>
+        <b><p class="list-group-item-text">Nama   : {{barang.nama_barang}}</p></b>
+        <b><p class="list-group-item-text">Jumlah : {{barang.jumlah}}</p></b>
+      <b><p class="list-group-item-text">Status : {{barang.status}}</p></b>
+
+      </div>
+      <span class="pull-right">
+        <img
+        [src]="barang.imagePath"
+        alt="{{barang.name}}"
+        class="img-responsive"
+        style="max-height:90px;">
+      </span>
+    </a>
